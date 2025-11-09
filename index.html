@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Código</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Editor de Código</h1>
+      <button id="runBtn" class="run-btn">▶ Executar em Nova Aba</button>
+    </header>
+
+    <div class="editor-container">
+      <div class="editor-panel">
+        <div class="panel-header">
+          <span class="panel-title">HTML</span>
+        </div>
+        <textarea id="htmlCode" class="code-input" spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Projeto</title>
+</head>
+<body>
+  <h1>Olá, Mundo!</h1>
+  <p>Edite o código e veja o resultado.</p>
+</body>
+</html></textarea>
+      </div>
+
+      <div class="editor-panel">
+        <div class="panel-header">
+          <span class="panel-title">CSS</span>
+        </div>
+        <textarea id="cssCode" class="code-input" spellcheck="false">body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}</textarea>
+      </div>
+
+      <div class="editor-panel">
+        <div class="panel-header">
+          <span class="panel-title">JavaScript</span>
+        </div>
+        <textarea id="jsCode" class="code-input" spellcheck="false">// Seu código JavaScript aqui
+console.log('Editor carregado!');
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Página pronta!');
+});</textarea>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div class="status-text">Edite o código e clique em Executar para abrir em uma nova aba em tela cheia.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
